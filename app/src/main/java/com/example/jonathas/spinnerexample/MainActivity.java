@@ -29,11 +29,14 @@ public class MainActivity extends AppCompatActivity {
                 this, android.R.layout.simple_spinner_item, dadosSpinner);
 
         spinner1.setAdapter(spinnerArrayAdapter);
-        spinner1.setOnItemSelectedListener(ouvinteSpinner);
 
-        //inicial
+        //inicial - não pegar o inicial, antes de setar o ouvinte,
         //spinner.setSelection(0,false)
 
+
+        spinner1.setOnItemSelectedListener(ouvinteSpinner);
+
+        
         //para ver qual selecionado, na ação de um botão
         //String esse = spinner1.getSelectedItem().toString();
         //long esseN = spinner1.getSelectedItemPosition();

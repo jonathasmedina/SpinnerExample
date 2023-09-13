@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         spinner1.setAdapter(spinnerArrayAdapter);
         spinner1.setOnItemSelectedListener(ouvinteSpinner);
 
+        //inicial
+        //spinner.setSelection(0,false)
 
         //para ver qual selecionado, na ação de um botão
         //String esse = spinner1.getSelectedItem().toString();
